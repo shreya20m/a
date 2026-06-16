@@ -4,8 +4,8 @@
   tasks:
     - name: copy WAR file to Tomcat
       copy:
-        src: "/var/snap/jenkins/5022/workspace/MavenAnsibleWebApp1-CICD/target/MavenAnsibleWebApp1.war"
-        dest: "/opt/tomcat/webapps/MavenAnsibleWebApp1.war"
+        src: "/var/snap/jenkins/5022/workspace/MavenAnsibleWebbApp1-CICD/target/MavenAnsibleWebbApp1.war"
+        dest: "/opt/tomcat/webapps/MavenAnsibleWebbApp1.war"
         remote_src: no
     - name: stop tomcat
       shell: /opt/tomcat/bin/shutdown.sh
