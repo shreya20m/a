@@ -8,7 +8,7 @@
         dest: "/opt/tomcat/webapps/MavenAnsibleWebbApp1.war"
         remote_src: no
     - name: stop tomcat
- 	    shell: /opt/tomcat/bin/shutdown.sh
- 	    ignore_errors: yes
+      shell: /opt/tomcat/bin/shutdown.sh
+      ignore_errors: yes
     - name: 	start tomcat
       shell: /opt/tomcat/bin/startup.sh
